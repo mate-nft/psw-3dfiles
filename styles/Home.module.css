@@ -1,4 +1,4 @@
-.main {
+/* .main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -106,9 +106,9 @@
 
 .logo {
   position: relative;
-}
+} */
 /* Enable hover only on non-touch devices */
-@media (hover: hover) and (pointer: fine) {
+/* @media (hover: hover) and (pointer: fine) {
   .card:hover {
     background: rgba(var(--card-rgb), 0.1);
     border: 1px solid rgba(var(--card-border-rgb), 0.15);
@@ -126,7 +126,7 @@
 }
 
 /* Mobile */
-@media (max-width: 700px) {
+/* @media (max-width: 700px) {
   .content {
     padding: 4rem;
   }
@@ -200,10 +200,10 @@
     );
     z-index: 1;
   }
-}
+} */
 
 /* Tablet and Smaller Desktop */
-@media (min-width: 701px) and (max-width: 1120px) {
+/* @media (min-width: 701px) and (max-width: 1120px) {
   .grid {
     grid-template-columns: repeat(2, 50%);
   }
@@ -226,4 +226,112 @@
   to {
     transform: rotate(0deg);
   }
+} */
+
+/* オリジナル */
+
+.background{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('../public/background2.png');
+  background-repeat: no-repeat;
+  background-size: cover; 
+  z-index: -1;
+}
+
+/* ヘッダー */
+
+.header{
+  height: 70px;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 30px;
+  align-items: center;
+}
+
+.connected{
+  font-size: 16px;
+  background-color: white;
+  color: black; 
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 50px;
+}
+
+.connect{
+  background-color: white;
+  color: black; 
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+/* メイン */
+.title{
+  text-align: center;
+  font-size: 60px;
+  color:white;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.main{
+  display: flex;
+  justify-content: center;
+}
+
+.container{
+  text-align: center;
+  background-color: yellow;
+  border: white 8px solid;
+  border-radius: 30px;
+  width: 70%;
+}
+
+.container > img{
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.form > input{
+  display: block;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+
+.inputBox{
+  font-size: 16px;
+  background-color: white;
+  color: black; 
+  border: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+}
+
+.submit{
+  background-color: white;
+  color: black; 
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 50px;
+  cursor: pointer;
+  border: 2px solid green;
+}
+
+.url{
+  margin: 20px;
 }
